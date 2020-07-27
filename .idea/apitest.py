@@ -69,7 +69,7 @@ def get_org():
     return jsonify(org),201
 @api.errorhandler(404)
 def page_not_found(error):
-    return "This path / api  does not exist"
+    return "This path / api  does not exist in Flask"
 @api.route('/')
 def index():
     return "Hello User welcome to my API - Ezhil"
