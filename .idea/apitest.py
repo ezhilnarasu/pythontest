@@ -81,7 +81,7 @@ def book_id():
     if 'id' in request.args:
         id =int(request.args['id'])
     else:
-        return "No Book ID provided in the URL"
+        return "No Book ID provided in the URL. Please enter a valid Book ID"
     results =[]
     for book in books:
         if book['id']==id:
